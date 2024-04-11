@@ -1,0 +1,95 @@
+
+/*@font-face {
+    font-family: Norse-Bold;
+    src: url(Norse-Bold.otf);
+  } */
+
+body{
+    font-family: Norse-Bold, sans-serif;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    display: flex;
+    height: 100vh;
+}
+
+.left{
+    color:white;
+    flex-direction: column;
+    background-image: url("https://images.unsplash.com/photo-1506946526854-9aad1ec915cb?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-basis: 30%;
+    flex-shrink:1;
+}
+
+.banner{
+    margin-top:50%;
+}
+
+.left-footer{
+
+    text-align: center;
+}
+
+.right{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.briefing{
+   
+    padding:20px;
+
+}
+
+.form{
+    margin:20px;
+}
+
+.form-row{
+    background-color:gold;
+    padding:10px;
+
+    justify-content: space-between;
+    align-content: space-between;
+}
+.form-item{
+    background:red;
+}
+.odin-logo{
+    background-color: black;
+    opacity: 0.6;
+}
+
+
+.signin{
+    margin:10px;
+    border-style:outset;
+    border-color: gray;
+    border-width: 1px;
+    opacity:0.1;
+}
+.createaccount{
+    align-self:baseline;
+    padding:10px 40px;
+    background-color: rgb(104, 138, 177);
+    color: white;
+    border-radius: 4px;
+    outline:2px solid white;
+    margin:20px;
+    
+ 
+}
+.right-footer{
+    margin:20px;
+}
+img{
+
+
+}
