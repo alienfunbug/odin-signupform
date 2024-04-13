@@ -30,7 +30,8 @@ body{
     justify-content: space-between; 
 }
 .banner{
-    margin-top:30%;
+    position:relative;
+    top:25vh;
     background-color: black;
     opacity: 0.6;
     display:flex;
@@ -90,11 +91,13 @@ body{
 .credentials{
     margin:20px;
     padding:var(--default-padding)0;
+    
 }
 
 .form{
     padding:var(--default-padding)0;
     /*box-shadow: 15px 10px 40px rgb(102, 135, 179);*/
+    overflow: auto;
 }
 .form-row{
     background-color:silver;
@@ -106,7 +109,7 @@ body{
 }
 .form-item{
     margin-right: 10%;
-    /*bbox-shadow: 10px 15px 10px gray;*/
+
     
 }
 .divider{
@@ -136,10 +139,39 @@ body{
 label{
     display:block;
     font-size: 1.5rem;
+    color:gray;
+    font-weight: 700;;
 }
 
 input{
-
     font-size: 1.8rem;
+    margin-top:5px;
+    border-color:#E5E7EB;
+}
+input:focus{   
+    transform: translate(1px,-2px);
+    transition: .3s ease;
+    box-shadow: 10px 15px 10px gray;
+}
+label:focus{   
+    color:rgb(66, 65, 65);
+    transition: .3s ease;
 }
 
+label:hover{   
+    color:rgb(66, 65, 65);
+    transition: .3s ease;
+}
+
+.createaccount:hover{
+    scale: 1.03;
+    transition: .3s ease;
+}
+
+/*validation*/
+input:invalid{
+    border-color:red;
+}
+input:valid{
+    border-color:green;
+}
