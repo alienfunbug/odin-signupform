@@ -1,74 +1,115 @@
-
-/*@font-face {
+:root{
+    --default-padding: 20px;
+}
+@font-face {
     font-family: Norse-Bold;
     src: url(Norse-Bold.otf);
-  } */
+  } 
 
 body{
-    font-family: Norse-Bold, sans-serif;
     margin:0;
     padding: 0;
     box-sizing: border-box;
 }
-
 .body{
     display: flex;
     height: 100vh;
 }
 
+
+
 .left{
     color:white;
+    display:flex;
     flex-direction: column;
     background-image: url("https://images.unsplash.com/photo-1506946526854-9aad1ec915cb?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    flex-basis: 30%;
-    flex-shrink:1;
+    width: 40%;
+    justify-content: space-between; 
 }
-
 .banner{
-    margin-top:50%;
+    margin-top:30%;
+    background-color: black;
+    opacity: 0.6;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    padding:10px
 }
-
+.banner-text{
+    font-family: Norse-Bold, sans-serif;
+    font-size: 5rem;
+}
+.odin-logo{
+    width: 20%;
+}
 .left-footer{
-
     text-align: center;
+    padding:var(--default-padding);
 }
+
+
+
 
 .right{
     display:flex;
     flex-direction: column;
-    flex-wrap: wrap;
+
 }
 
-.briefing{
-   
-    padding:20px;
+.header{
+    font-size: 1.8rem;
+    max-width:60%;
+    padding:80px 0 var(--default-padding) 0;
+}
 
+.header2{
+    font-size: 1.8rem;
+    max-width:60%;
+    padding:var(--default-padding)0;
+}
+.signup{
+    padding:var(--default-padding);
+    height: 66%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.briefing{  
+    padding:var(--default-padding);
+}
+.calltoaction{
+    font-size: 1.8rem;
+    max-width:60%;
+    padding:var(--default-padding)0;
+
+}
+
+.credentials{
+    margin:20px;
+    padding:var(--default-padding)0;
 }
 
 .form{
-    margin:20px;
+    padding:var(--default-padding)0;
+    /*box-shadow: 15px 10px 40px rgb(102, 135, 179);*/
 }
-
 .form-row{
-    background-color:gold;
-    padding:10px;
-
-    justify-content: space-between;
-    align-content: space-between;
+    background-color:silver;
+    box-shadow: 2p;
+    opacity:70%;
+    padding:10px;   
+    display: flex;
+    
 }
 .form-item{
-    background:red;
+    margin-right: 10%;
+    /*bbox-shadow: 10px 15px 10px gray;*/
+    
 }
-.odin-logo{
-    background-color: black;
-    opacity: 0.6;
-}
-
-
-.signin{
+.divider{
     margin:10px;
     border-style:outset;
     border-color: gray;
@@ -82,14 +123,23 @@ body{
     color: white;
     border-radius: 4px;
     outline:2px solid white;
-    margin:20px;
-    
- 
+    margin:20px 0;
+    font-size: 1.5rem;
 }
-.right-footer{
-    margin:20px;
+.login-footer{
+    padding:var(--default-padding)0;
+    font-size: 1.5rem;
 }
-img{
 
 
+
+label{
+    display:block;
+    font-size: 1.5rem;
 }
+
+input{
+
+    font-size: 1.8rem;
+}
+
