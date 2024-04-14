@@ -4,10 +4,10 @@ const confirmPasswordVerification = document.getElementById("confirm_user_passwo
 const signupform = document.getElementById("signupform")
 submitButton.addEventListener("click", (event) => {
 
-    if (passwordVerification.value === confirmPasswordVerification.value) {
+    if ((passwordVerification.value === confirmPasswordVerification.value) && ((passwordVerification.value).length > 8)) {
 		alert("Successfully created account!");
         signupform.reset();
 	} else {
-		alert("Passwords do not match, please try again");
+		alert("Passwords do not match, or meet complexity requirements, please try again");
 	}
 });
