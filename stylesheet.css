@@ -136,12 +136,12 @@ body{
 /* other css items and effects */
 .left-footer a,a:visited{
     text-decoration: none;
-    font-weight: 800;
+    font-weight: 400;
     color: rgb(104, 138, 177);
   }
   .login a,a:visited{
     text-decoration: none;
-    font-weight: 800;
+    font-weight: 400;
     color: rgb(104, 138, 177);
   }
 label{
