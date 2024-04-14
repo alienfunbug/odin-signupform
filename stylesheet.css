@@ -175,3 +175,20 @@ input:invalid{
 input:valid{
     border-color:green;
 }
+
+#user_password:invalid:focus{
+    background-color: rgb(255, 74, 74);
+}
+#user_password:valid:focus{
+    background-color: rgb(102, 206, 81);
+}
+
+#confirm_user_password:invalid:focus{
+    background-color: rgb(255, 74, 74);
+}
+#confirm_user_password:valid:focus{
+    background-color: rgb(102, 206, 81);
+}
+#confirm_user_password{
+
+}

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="stylesheet.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -36,7 +36,8 @@
 
             <div class="credentials">
                 <div class="calltoaction">Let's do this!</div>
-                <form id="signupform" action="#" method="post" class="form">
+                <form id="signupform" onsubmit="return false" class="form">
+                <!-- action="" method="post" left out for functionality-->
                     <div class="form-row">
                         <div class="form-item">
                             <label for="first_name">FIRST NAME</label>
@@ -62,11 +63,11 @@
                     <div class="form-row">
                         <div class="form-item">
                             <label for="user_password">PASSWORD</label>
-                            <input type="password" name="user_password" id="user_password" />
+                            <input type="password" name="user_password" id="user_password" minlength="8" placeholder="Minimum 8 characters"  minlength="8" />
                         </div>
                         <div class="form-item">
                             <label for="confirm_user_password">CONFIRM PASSWORD</label>
-                            <input type="password" name="confirm_user_password" id="confirm_user_password" />
+                            <input type="password" name="confirm_user_password" id="confirm_user_password" minlength="8" />
                         </div>
                     </div>
                 </form>
@@ -75,7 +76,7 @@
 
                     <div class="divider"></div>
 
-                    <input type="submit" form="signupform" value="Create Account" class="createaccount"/>
+                    <input type="submit" form="signupform" value="Create Account" class="createaccount" id="createaccount"/>
                     <!--<button class="createaccount">Create Account</button>-->
                     <div class="login-footer">Already have an account? Login</div>
                 </div>

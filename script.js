@@ -1,22 +1,13 @@
-/*const passwordVerification = document.getElementById("user_password");
+const submitButton = document.getElementById("createaccount");
+const passwordVerification = document.getElementById("user_password");
 const confirmPasswordVerification = document.getElementById("confirm_user_password");
+const signupform = document.getElementById("signupform")
+submitButton.addEventListener("click", (event) => {
 
-if (passwordVerification) {
-    passwordVerification.addEventListener('input',function(addEventListener){
-        const inputValue = event.target.value; // Get the current value of the input field
-        console.log(inputValue); // Do something with the input value
-    }); 
-    console.log(passwordVerification);
-    console.log(confirmPasswordVerification);
-}
-
-
-
-
-if (passwordVerification) {
-    passwordVerification.addEventListener('input', ()=>{
- 
-        console.log(this.value);
-      
-      })
-}*/
+    if (passwordVerification.value === confirmPasswordVerification.value) {
+		alert("Successfully created account!");
+        signupform.reset();
+	} else {
+		alert("Passwords do not match, please try again");
+	}
+});
