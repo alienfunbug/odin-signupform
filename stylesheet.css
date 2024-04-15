@@ -39,6 +39,8 @@ body{
     justify-content:center;
     align-items: center;
     padding:10px;
+    box-shadow: 10px 10px 55px 130px rgba(255,255,255,1);
+
 }
 .banner-text{
     font-family: Norse-Bold, sans-serif;
