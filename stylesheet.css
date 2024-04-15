@@ -182,13 +182,24 @@ input:valid{
 }
 #user_password:invalid:focus{
     background-color: rgb(255, 74, 74);
+    transition: background-color 1s;
 }
 #user_password:valid:focus{
     background-color: rgb(102, 206, 81);
+    transition: background-color 1s;
 }
 #confirm_user_password:invalid:focus{
     background-color: rgb(255, 74, 74);
+    transition: background-color 1s;
 }
 #confirm_user_password:valid:focus{
     background-color: rgb(102, 206, 81);
+    transition: background-color 1s;
+}
+
+#passwordAlert{
+    padding-top: 10px;
+    color:red;
+    transition: opacity 0.8s;
+    opacity: 0;
 }
