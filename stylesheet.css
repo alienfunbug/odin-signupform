@@ -15,6 +15,7 @@ body{
 .body{
     display: flex;
     height: 100vh;
+    background-color: rgb(231, 231, 221);
 }
 
 
@@ -23,18 +24,18 @@ body{
     color:white;
     display:flex;
     flex-direction: column;
-    background-image: url("https://images.unsplash.com/photo-1506946526854-9aad1ec915cb?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-image: url("https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 40%;
+    width: 60%;
     justify-content: space-between; 
 }
 .banner{
     position:relative; 
     top: 25vh;
     background-color: black;
-    opacity: 0.6;
+    opacity: 0.5;
     display:flex;
     justify-content:center;
     align-items: center;
@@ -98,11 +99,11 @@ body{
 
 .form{
     padding:var(--default-padding)0;
-    /*box-shadow: 15px 10px 40px rgb(102, 135, 179);*/
+    /*box-shadow: -1px -1px 155px 1px rgb(178, 214, 181);*/
     overflow: auto;
 }
 .form-row{
-    background-color:silver;
+    background-color:rgb(178, 214, 181,0.7);
     box-shadow: 2p;
     opacity:70%;
     padding:10px;   
@@ -121,7 +122,7 @@ body{
 .createaccount{
     align-self:baseline;
     padding:10px 40px;
-    background-color: rgb(104, 138, 177);
+    background-color: rgb(3, 160, 16);
     color: white;
     border-radius: 4px;
     outline:2px solid white;
@@ -139,12 +140,12 @@ body{
 .left-footer a,a:visited{
     text-decoration: none;
     font-weight: 400;
-    color: rgb(104, 138, 177);
+    color: rgb(3, 63, 8);
   }
   .login a,a:visited{
     text-decoration: none;
     font-weight: 400;
-    color: rgb(104, 138, 177);
+    color: rgb(178, 214, 181);
   }
 label{
     display:block;
